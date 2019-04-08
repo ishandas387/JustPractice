@@ -8,8 +8,10 @@ package com.string.stuff;
 public class LongestCommonSubstring {
 
 	public static void main(String[] args) {
-		
-		String s1 = "abcdefghxyzzzzz";
+		//O(n*m^2)
+		//n being the longest string where we search
+		//m being the string where we find the substring possibilities with 2 for loops
+		String s1 = "abcdefghxyzzzzz"; 
 		String s2 ="qwetryxyzzzzzxy";
 		String largestCommonSubstring;
 		//print(s2);
