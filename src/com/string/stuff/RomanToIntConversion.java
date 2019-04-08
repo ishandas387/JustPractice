@@ -1,10 +1,5 @@
 package com.string.stuff;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.xml.bind.ValidationEvent;
-
 public class RomanToIntConversion {
 //convert roman to int 
 	// i = 1
