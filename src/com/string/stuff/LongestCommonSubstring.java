@@ -23,15 +23,7 @@ public class LongestCommonSubstring {
 		System.out.println(largestCommonSubstring);
 	}
 
-	private static void print(String s2) {
-		//abc
-		for(int i=0;i<s2.length();i++){
-			for(int j=i+1;j<=s2.length();j++)
-			System.out.println(s2.substring(i, j));
-		}
-		
-	}
-
+	
 	private static String findLargestCommonSub(String large, String small) {
 		String sub = null;
 		String maxSub = null;
