@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Given two array considering array one is villan and arry 2 is heroes , if arry 1 [2,5,7,3,1]

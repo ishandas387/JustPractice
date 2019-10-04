@@ -65,7 +65,6 @@ public class TheEggProblem {
 	}
 
 	private static int max(int i, int j) {
-		// TODO Auto-generated method stub
 		return i>j? i:j;
 	}
 

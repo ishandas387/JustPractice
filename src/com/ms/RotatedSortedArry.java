@@ -17,15 +17,18 @@ public class RotatedSortedArry {
 
 	private static void getElement(int[] arr, int e) {
 		//find the pivot point
-		int key =9;
+		int key =e;
 		int p =getPivot(arr,0,arr.length-1);
 		if(p==-1){
+			//no rotation direct binary search
 			System.out.println(binarySearch(arr, 0,arr.length-1, key));
 		}
 		if(arr[p] == key){
+			//found the element
 			System.out.println(p);
 		}
 		if(arr[0]<=key){
+			//
 			System.out.println(binarySearch(arr, 0,p-1, key));
 		}else{
 			System.out.println(binarySearch(arr, p,arr.length-1, key));
