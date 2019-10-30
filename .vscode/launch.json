@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - OptimizeTruckLoad",
+            "request": "launch",
+            "mainClass": "com.ms.OptimizeTruckLoad",
+            "projectName": "GkForGks"
+        }
+    ]
+}

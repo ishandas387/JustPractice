@@ -29,7 +29,7 @@ public class RobotGrid {
 			for(int j=1;j<8;j++){
 				grid[i][j]= grid[i][j-1]+grid[i-1][j];
 			}
-		}
+		} 
 		return grid[r][c];
 		//the robot can only move down or right.
 		
