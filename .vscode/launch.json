@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MeetingRoom",
+            "request": "launch",
+            "mainClass": "com.leetfree.MeetingRoom",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OptimizeTruckLoad",
             "request": "launch",
             "mainClass": "com.ms.OptimizeTruckLoad",
