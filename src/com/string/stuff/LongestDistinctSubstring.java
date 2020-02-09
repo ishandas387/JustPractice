@@ -22,7 +22,7 @@ public class LongestDistinctSubstring {
 		// Lets do it with brute force. Get all substrings and find the highets length.
 
 		// 3 nested forloops O(n^3)
-		String s = "abacd";
+		String s = "abcdab";
 		int n = s.length();
 		int ans = 0;
 		for (int i = 0; i < n; i++) {
@@ -43,11 +43,10 @@ public class LongestDistinctSubstring {
 		 * have no duplicate characters. We only need to check if s[j]s[j] is already in
 		 * the substring s_{ij}s ij ​ .
 		 */
-		System.out.println("test");
 		 System.out.println("sliding"+slidingWindow(s));
-
-
 		 System.out.println("map "+doItByMap(s));
+		 printLongestSubstring("");
+		 printLongestSubstring2("");
 	}
 
 	//Time complexity O(2n) , space O(n)
@@ -62,7 +61,7 @@ public class LongestDistinctSubstring {
 				ans = Math.max(ans, j-1);
 
 			}else{
-				set.add(ch[i+1]);
+				set.add(ch[i++]);
 			}
 		}
 		return ans;
@@ -85,6 +84,7 @@ public class LongestDistinctSubstring {
 	//Continue until end reaches the end
 
 	private static int doItByMap(String s){
+		s= "tmmzuxt";
 		int n = s.length();
 		Map<Character,Integer> map = new HashMap<>();
 		int ans =0;
@@ -92,6 +92,9 @@ public class LongestDistinctSubstring {
 				if(map.containsKey(s.charAt(j))){
 					//increment i 
 					i = Math.max(map.get(s.charAt(j)),i);
+					if( j == s.length()-1){
+					ans = Math.max(ans, j-i+1);
+					}
 				} else {
 					ans = Math.max(ans, j-i+1);
 					map.put(s.charAt(j), j+1);
@@ -100,4 +103,44 @@ public class LongestDistinctSubstring {
 		return ans;
 	}
 
+	private static void printLongestSubstring(String s){
+		s = "abcabcbb";
+		String output ="";
+		Map<Character,Integer> map = new HashMap<>();
+		for(int start =0 ,  end =0; end < s.length(); end++){
+			if(map.containsKey(s.charAt(end)) ){
+
+				start = Math.max(map.get(s.charAt(end))+1, start);
+				map.remove(s.charAt(end));
+			} else {
+				map.put(s.charAt(end), end);
+			}
+			if(output.length() < end -start +1){
+				output = s.substring(start, end+1);
+			}
+		}
+		System.out.println(output);
+
+	}
+
+	//this one works for every corner case
+	private static void printLongestSubstring2(String s){
+		s = "abcabcbb";
+		String output ="";
+		Set<Character> set = new HashSet<>();
+		int i =0;
+		int j=0;
+		int ans =0;
+		while(j < s.length()){
+			if(!set.contains(s.charAt(j))){
+				set.add(s.charAt(j));
+				ans = Math.max(ans, j-i+1);
+				j++;
+			}else{
+				set.remove(s.charAt(i));
+				i++;
+			}
+		}
+		System.out.println(ans);
+	}
 }
