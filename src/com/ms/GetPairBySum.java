@@ -2,8 +2,10 @@ package com.ms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class GetPairBySum {
@@ -47,7 +49,7 @@ public class GetPairBySum {
 		}
 		return listOfPairs;
 	}
-
+	//O(n)
 	public static List<List<Integer>> getPairBySumWithSet(int [] arr, int sum){
 		List<List<Integer>> listOfPairs = new ArrayList<>();
 		Set<Integer> set = new HashSet<>();
@@ -60,6 +62,24 @@ public class GetPairBySum {
 				listOfPairs.add(list);
 			}
 			set.add(arr[i]);
+		}
+		return listOfPairs;
+	}
+
+	//using a map
+	public static List<List<Integer>> getPairBySumWithMap(int [] arr, int sum){
+		//return the index
+		Map<Integer,Integer> map = new HashMap<>();
+		List<List<Integer>> listOfPairs = new ArrayList<>();
+		for(int i=0;i<=arr.length-1;i++){
+			int temp = sum- arr[i];
+			if(map.containsKey(temp)){
+				List<Integer> list = new ArrayList<>();
+				list.add(map.get(temp));
+				list.add(i);
+				listOfPairs.add(list);
+			}
+			map.put(arr[i], i);
 		}
 		return listOfPairs;
 	}

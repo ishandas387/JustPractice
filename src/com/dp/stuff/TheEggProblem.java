@@ -51,6 +51,9 @@ public class TheEggProblem {
 			for(int j=2;j<=floors;j++){  
 				matrix[i][j]= Integer.MAX_VALUE;
 				for(int x=1;x<=j;x++){
+					//MAX of 		IF egg breaks		IF egg doesnt
+								//	remaining eggs 		same number of eggs
+								//	from floors below	from remaining floors
 					result =1 + max(matrix[i-1][x-1],matrix[i][j-x]);
 					if(result<matrix[i][j]){
 						matrix[i][j]=result;

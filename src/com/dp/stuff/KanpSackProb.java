@@ -5,7 +5,7 @@ import java.util.Map;
 
 /**
  * Given a bag which can carry max weight W. set of items with value and weight
- * of each. Find the max value items that can go into the bag.
+ * of each. Find the max value items that can go into the bag.`
  *
  */
 public class KanpSackProb {

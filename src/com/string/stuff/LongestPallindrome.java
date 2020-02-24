@@ -34,7 +34,7 @@ import java.util.Map;
 public class LongestPallindrome {
 
 	public static void main(String[] args) {
-		String str = "abbccbblaaadl";
+		String str = "racecar";
 
 		System.out.println(returnLargestPal(str));
 
@@ -83,6 +83,7 @@ public class LongestPallindrome {
 			begin--;
 			end++;
 		}
+		System.out.println("***"+s.substring(begin + 1, end));
 		return s.substring(begin + 1, end);
 	}
 
