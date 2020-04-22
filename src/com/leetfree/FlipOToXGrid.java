@@ -1,4 +1,8 @@
 package com.leetfree;
+
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 /**
  * Given a grid of X O. flip all O to X if it is surrounded by X. O in the boundaries are not considered.
  */
@@ -14,8 +18,14 @@ public class FlipOToXGrid{
         printTheGrid(grid);
         ///////////////////////
 
+        //Lets try with BFS
+        flipWithBfs();
 
 
+    }
+
+    private static void flipWithBfs() {
+        Queue<Character> queue = new PriorityQueue<>();
     }
 
     private static void flip() {

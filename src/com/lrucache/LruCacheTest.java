@@ -107,8 +107,8 @@ public class LruCacheTest {
 
 // Design a doubly linked list first
 class Entry {
-    int value;
     int key;
+    int value;
     Entry next;
     Entry prev;
 }
