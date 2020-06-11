@@ -2,6 +2,230 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "com.random.stuff.Test",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Decoder",
+            "request": "launch",
+            "mainClass": "com.ggle.Decoder",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EggDrop",
+            "request": "launch",
+            "mainClass": "com.random.EggDrop",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Trie",
+            "request": "launch",
+            "mainClass": "com.random.Trie",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RodCutting",
+            "request": "launch",
+            "mainClass": "com.random.RodCutting",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RodCutting",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.RodCutting",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SubArrySum",
+            "request": "launch",
+            "mainClass": "com.ggle.SubArrySum",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestOper",
+            "request": "launch",
+            "mainClass": "com.random.stuff.TestOper",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ValidateStackSequence",
+            "request": "launch",
+            "mainClass": "com.ggle.ValidateStackSequence",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DeleteNodeForForest",
+            "request": "launch",
+            "mainClass": "com.leetfree.DeleteNodeForForest",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DiString",
+            "request": "launch",
+            "mainClass": "com.leetfree.DiString",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SubSequenceVideoAmazon",
+            "request": "launch",
+            "mainClass": "com.random.stuff.SubSequenceVideoAmazon",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CoreSorting",
+            "request": "launch",
+            "mainClass": "com.random.stuff.CoreSorting",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestHashing",
+            "request": "launch",
+            "mainClass": "com.random.stuff.TestHashing",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShortestDistanceToAllTheBuildings",
+            "request": "launch",
+            "mainClass": "com.leetfree.ShortestDistanceToAllTheBuildings",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WallAndGate",
+            "request": "launch",
+            "mainClass": "com.leetfree.WallAndGate",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FlipOToXGrid",
+            "request": "launch",
+            "mainClass": "com.leetfree.FlipOToXGrid",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NumberOfIsland",
+            "request": "launch",
+            "mainClass": "com.leetfree.NumberOfIsland",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PhonePad",
+            "request": "launch",
+            "mainClass": "com.string.stuff.PhonePad",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HashCode",
+            "request": "launch",
+            "mainClass": "com.hashcode.HashCode",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPallindrome",
+            "request": "launch",
+            "mainClass": "com.string.stuff.LongestPallindrome",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindFirstDuplicate",
+            "request": "launch",
+            "mainClass": "com.leetfree.FindFirstDuplicate",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestDistinctSubstring",
+            "request": "launch",
+            "mainClass": "com.string.stuff.LongestDistinctSubstring",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Triplets",
+            "request": "launch",
+            "mainClass": "com.ms.Triplets",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - KandanesAlgo",
+            "request": "launch",
+            "mainClass": "com.ms.KandanesAlgo",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LruCacheTest",
+            "request": "launch",
+            "mainClass": "com.lrucache.LruCacheTest",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedHashMapTest",
+            "request": "launch",
+            "mainClass": "com.lrucache.LinkedHashMapTest",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FairIndex",
+            "request": "launch",
+            "mainClass": "com.leetfree.FairIndex",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EggDrop",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.rvs.EggDrop",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TheEggProblem",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.TheEggProblem",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibo",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.rvs.Fibo",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextClosestTime",
+            "request": "launch",
+            "mainClass": "com.leetfree.NextClosestTime",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MeetingRoom",
             "request": "launch",
             "mainClass": "com.leetfree.MeetingRoom",

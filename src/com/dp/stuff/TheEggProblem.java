@@ -46,7 +46,8 @@ public class TheEggProblem {
 		//if egg breaks try for remaining egg from FLOOR-1 
 		//if egg doesnt break try for same number of eggs but from remaining floors.
 		//MAX of these two will give the result
-		
+		// O( number of eggs * number of floors ^2)
+		// O(n*m^2)
 		for(int i=2;i<=eggs;i++){
 			for(int j=2;j<=floors;j++){  
 				matrix[i][j]= Integer.MAX_VALUE;
