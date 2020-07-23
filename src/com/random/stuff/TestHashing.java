@@ -5,6 +5,7 @@ class TestHashing{
     public static void main(String[] args) {
         String s = new String("tests");
         String s1 = "tests";
+        s1.trim();
         String s2 = new String("tests");
         System.out.println(s.hashCode() +"--"+s1.hashCode());
 

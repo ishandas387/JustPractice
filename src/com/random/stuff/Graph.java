@@ -83,7 +83,7 @@ public class Graph {
         visited.add(startNode);
         while(!q.isEmpty()){
             String vertex =  q.poll();
-            for(Vertex v : this.getAdjListMap().get(new Vertex(vertex)))){
+            for(Vertex v : this.getAdjListMap().get(new Vertex(vertex))){
                 q.add(v.getNode());
                 visited.add(v.getNode());
             }
