@@ -1,8 +1,5 @@
 package com.leetfree;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * Given a 2D grid of 1(land) and 0(water) count the number of island in the
  * grid The outside of the grid is water.
@@ -54,5 +51,8 @@ public class NumberOfIsland {
         dfs(r + 1, c);
         dfs(r, c - 1);
         dfs(r, c + 1);
+
+        String s ="";
+        s.compareTo("anotherString");
     }
 }

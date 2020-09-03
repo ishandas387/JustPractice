@@ -2,6 +2,90 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EculidianDistance",
+            "request": "launch",
+            "mainClass": "com.amz.EculidianDistance",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinCoinToSum",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.MinCoinToSum",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WorkdayStringSort",
+            "request": "launch",
+            "mainClass": "com.leetfree.WorkdayStringSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RobHouse",
+            "request": "launch",
+            "mainClass": "com.leetfree.RobHouse",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StockProfit",
+            "request": "launch",
+            "mainClass": "com.leetfree.StockProfit",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StockPred",
+            "request": "launch",
+            "mainClass": "com.leetfree.StockPred",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LruCacheExtending",
+            "request": "launch",
+            "mainClass": "com.lrucache.again.LruCacheExtending",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LruCacheAgain",
+            "request": "launch",
+            "mainClass": "com.lrucache.again.LruCacheAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxSumSubArray",
+            "request": "launch",
+            "mainClass": "com.ms.MaxSumSubArray",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CopyZeroes",
+            "request": "launch",
+            "mainClass": "com.leetfree.CopyZeroes",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - B",
+            "request": "launch",
+            "mainClass": "com.random.stuff.B",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Npe",
+            "request": "launch",
+            "mainClass": "com.random.stuff.Npe",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "com.random.stuff.Test",
