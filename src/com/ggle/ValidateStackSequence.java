@@ -35,7 +35,7 @@ public class ValidateStackSequence {
     //O(n) mostly cause you are looping through two same size arrys , and O(n) for space using stack.
     private static boolean theBruteForceWay(int[] pushed, int[] popped) {
 
-        //turns out to be a greedy approach.
+        
         Stack<Integer> stack = new Stack<>(); 
         int po =0 ;
         for(int i : pushed){

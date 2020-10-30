@@ -52,7 +52,6 @@ public class NumberOfIsland {
         dfs(r, c - 1);
         dfs(r, c + 1);
 
-        String s ="";
-        s.compareTo("anotherString");
+ 
     }
 }

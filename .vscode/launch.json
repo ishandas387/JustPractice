@@ -2,6 +2,132 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - KLargestElementInArray",
+            "request": "launch",
+            "mainClass": "com.random.stuff.KLargestElementInArray",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSort",
+            "request": "launch",
+            "mainClass": "com.random.stuff.QuickSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RotOranges",
+            "request": "launch",
+            "mainClass": "com.leetfree.RotOranges",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString",
+            "request": "launch",
+            "mainClass": "com.random.stuff.TestString",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountIsland",
+            "request": "launch",
+            "mainClass": "com.random.stuff.CountIsland",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinCoinToSum",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.rvs.MinCoinToSum",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountOfNextSmallestInt",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.rvs.CountOfNextSmallestInt",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.rvs.MergeSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextSmallestWithMergeSort",
+            "request": "launch",
+            "mainClass": "com.random.stuff.NextSmallestWithMergeSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MSortAgain",
+            "request": "launch",
+            "mainClass": "com.random.stuff.MSortAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "com.Test",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextSmallest",
+            "request": "launch",
+            "mainClass": "com.random.NextSmallest",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSort",
+            "request": "launch",
+            "mainClass": "com.random.MergeSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FrogJump",
+            "request": "launch",
+            "mainClass": "com.dp.FrogJump",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateTimeTest",
+            "request": "launch",
+            "mainClass": "com.amz.DateTimeTest",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CandyCrush1D",
+            "request": "launch",
+            "mainClass": "com.amz.CandyCrush1D",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestIncreasingSubSequence",
+            "request": "launch",
+            "mainClass": "com.dp.LongestIncreasingSubSequence",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Video",
+            "request": "launch",
+            "mainClass": "com.amz.Video",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EculidianDistance",
             "request": "launch",
             "mainClass": "com.amz.EculidianDistance",
