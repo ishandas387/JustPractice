@@ -19,11 +19,11 @@ public class TestString {
         String s = "blue";
         String s2 = null;
         String s3 = new String("blue");
-        System.out.println("blue".equals(s));
-        System.out.println("blue" == s);
-        System.out.println(s3 == s);
-        System.out.println(s.equals(s2));
-        System.out.println(s3.hashCode()==s.hashCode());
+        System.out.println("blue".equals(s)); //true
+        System.out.println("blue" == s); //true
+        System.out.println(s3 == s); //false
+        System.out.println(s.equals(s2)); //false
+        System.out.println(s3.hashCode()==s.hashCode()); //true
         //System.out.println(s2.equals(s));
 
         TestString ts = new TestString();

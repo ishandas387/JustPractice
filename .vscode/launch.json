@@ -2,6 +2,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WordLadder",
+            "request": "launch",
+            "mainClass": "com.ggle.WordLadder",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RotOrangesAgain",
+            "request": "launch",
+            "mainClass": "com.leetfree.RotOrangesAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TopKElement",
+            "request": "launch",
+            "mainClass": "com.lrucache.again.TopKElement",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Intersect",
+            "request": "launch",
+            "mainClass": "com.linkdlist.stuff.Intersect",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - VoteCount",
+            "request": "launch",
+            "mainClass": "com.ggle.VoteCount",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Url",
+            "request": "launch",
+            "mainClass": "com.random.stuff.Url",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Calendar1",
+            "request": "launch",
+            "mainClass": "com.random.stuff.Calendar1",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - QuickSortAgain",
+            "request": "launch",
+            "mainClass": "com.random.stuff.QuickSortAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxDistanceSeat",
+            "request": "launch",
+            "mainClass": "com.ggle.MaxDistanceSeat",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NextSmallestAgain",
+            "request": "launch",
+            "mainClass": "com.random.stuff.NextSmallestAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergeSortAgain",
+            "request": "launch",
+            "mainClass": "com.random.stuff.MergeSortAgain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrieMain",
+            "request": "launch",
+            "mainClass": "com.random.trie.rvs.TrieMain",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JobDifficulty",
+            "request": "launch",
+            "mainClass": "com.random.JobDifficulty",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindDuplicateInConstantTime",
+            "request": "launch",
+            "mainClass": "com.random.stuff.FindDuplicateInConstantTime",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - KLargestElementInArray",
             "request": "launch",
             "mainClass": "com.random.stuff.KLargestElementInArray",

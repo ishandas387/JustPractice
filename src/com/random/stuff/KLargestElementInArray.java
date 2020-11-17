@@ -1,9 +1,7 @@
 package com.random.stuff;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
-import java.util.Random;
 
 public class KLargestElementInArray {
 
@@ -33,10 +31,9 @@ public class KLargestElementInArray {
         int length = arr2.length;
         int left = 0;
         int right = length-1;
-        Random rand = new Random(0);
         while(left <= right){
             //chose a random pivot 
-            int pivot = rand.nextInt(right - left+1)+left;
+            int pivot = (right+left)/2;
             int indexAfterPartition = partitionP(arr2, left, right, pivot);
 
             if(indexAfterPartition == length - k){
@@ -70,7 +67,7 @@ public class KLargestElementInArray {
         int index = left;
 
         for(int i=left; i<right ; i++){
-            if(arr2[i] <pivot){
+            if(arr2[i] < pivotValue){
                 swap(arr2, i, index);
                 index++;
             }

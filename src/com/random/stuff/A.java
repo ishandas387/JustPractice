@@ -15,12 +15,15 @@ class B extends A{
     }
 
     public static void main(String[] args) {
-        B b =  new B();
+
+        System.out.println((int) 'a');
+
+        /*B b =  new B();
         b.lol();
         System.out.println(B.type);
 
         A a = new A();
         System.out.println(a.equals(b));
-        //System.out.println(instanceOf);
+        //System.out.println(instanceOf);*/
     }
 }
