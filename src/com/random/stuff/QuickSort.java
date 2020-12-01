@@ -2,7 +2,7 @@ package com.random.stuff;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] arr = {10,20,2,5,4,23};
+        int[] arr = {233,132,5,21,2,11,46};
 
         quickSort(arr, 0, arr.length-1);
 

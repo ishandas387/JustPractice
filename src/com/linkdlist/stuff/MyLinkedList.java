@@ -55,8 +55,6 @@ public class MyLinkedList {
 	}
 
 	public void reverse() {
-		// TODO Auto-generated method stub
-
 		Node current = this.head;
 		Node next = null;
 		Node previous=null;
@@ -75,7 +73,6 @@ public class MyLinkedList {
 		
 	}
 	public void reverseKth(int k) {
-		// TODO Auto-generated method stub
 
 		Node current = this.head;
 		Node next = null;
@@ -104,5 +101,9 @@ public class MyLinkedList {
 			slow = slow.next;
 		}
 		return slow.data;
+	}
+
+	public void reverseFromPointToPoint(int start, int end){
+		
 	}
 }

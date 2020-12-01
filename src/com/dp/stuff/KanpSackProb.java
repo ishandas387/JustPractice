@@ -11,55 +11,45 @@ import java.util.Map;
 public class KanpSackProb {
 
 	public static void main(String[] args) {
-		int[] values ={20,5,10,40,15,25};
-		int[] weights={1,2,3,8,7,4};
-		int w=10;
-		//include current item in bag and recur for other items with reduced
-		//bag capacity.
-		//exclude the current item and recur for the other items.
-		
-		int item = values.length-1;
+		int[] values = { 20, 5, 10, 40, 15, 25 };
+		int[] weights = { 1, 2, 3, 8, 7, 4 };
+		int w = 10;
+		// include current item in bag and recur for other items with reduced
+		// bag capacity.
+		// exclude the current item and recur for the other items.
+
+		int item = values.length - 1;
 		Long start = System.currentTimeMillis();
-		System.out.println("Max profit value "+recursiveWayOfDoingThings(values,weights,item ,w));
-		System.out.println("Time taken "+(System.currentTimeMillis() - start));
-		
+		System.out.println("Max profit value " + recursiveWayOfDoingThings(values, weights, item, w));
+		System.out.println("Time taken " + (System.currentTimeMillis() - start));
+
 		start = System.currentTimeMillis();
-		Map<String,Integer> lookUp = new HashMap<>();
-		System.out.println("Max profit value with DP "+topToBottomDP(values,weights,item,w, lookUp));
-		System.out.println("Time taken "+(System.currentTimeMillis() - start));
-		
-		
+		Map<String, Integer> lookUp = new HashMap<>();
+		System.out.println("Max profit value with DP top down" + topToBottomDP(values, weights, item, w, lookUp));
+		System.out.println("Time taken " + (System.currentTimeMillis() - start));
+
 		start = System.currentTimeMillis();
-		System.out.println("Max profit value with DP "+bottomUpDP(values,weights,item,w));
-		System.out.println("Time taken "+(System.currentTimeMillis() - start));
+		System.out.println("Max profit value with DP bottom up " + bottomUpDP(values, weights, item, w));
+		System.out.println("Time taken " + (System.currentTimeMillis() - start));
 	}
 
 	private static int bottomUpDP(int[] values, int[] weights, int item, int w) {
-		return 0;
+		int[][] cache = new int[item+1][w+1];
+		for(int i=1; i< values.length; i++){
+			for(int j=0; j<=w; j++){
+				if(weights[i] > j){
+					cache[i][j] = cache[i-1][j];
+				} else {
+					cache[i][j] = Math.max(cache[i-1][j], cache[i-1][j-weights[i-1]]+ values[i]);
+				}
+			}
+		}
+
+		return cache[item+1][w];
+
 	}
 
 	private static int topToBottomDP(int[] values, int[] weights, int item, int w, Map<String, Integer> lookUp) {
-		// base case
-				if (w < 0) {
-					return Integer.MIN_VALUE;
-				}
-				if (w == 0 || item < 0) {
-					return 0;
-				}
-			String key = item +"|"+w;
-			if(!lookUp.containsKey(key)){
-				int include = values[item] +topToBottomDP(values, weights, item-1, w-weights[item],lookUp);
-				//exclude the current item
-				int exclude= topToBottomDP(values, weights, item-1,w,lookUp);
-				
-				lookUp.put(key, Integer.max(include, exclude));
-			}
-			return lookUp.get(key);
-	}
-
-	//recursive stuff is exponetial in time complexity.
-	private static int recursiveWayOfDoingThings(int[] values, int[] weights, int item, int w) {
-		System.out.println("item to check "+item+" bag with current weight "+w);
 		// base case
 		if (w < 0) {
 			return Integer.MIN_VALUE;
@@ -67,18 +57,38 @@ public class KanpSackProb {
 		if (w == 0 || item < 0) {
 			return 0;
 		}
-		
-		//include current item and check others
-		System.out.println("adding item "+item+" to bag with w "+w);
-		int include = values[item] +recursiveWayOfDoingThings(values, weights, item-1, w-weights[item]);
-		//exclude the current item
-		System.out.println("not adding item "+item+" to bag with w "+w);
-		int exclude= recursiveWayOfDoingThings(values, weights, item-1,w);
-		
+		String key = item + "|" + w;
+		if (!lookUp.containsKey(key)) {
+			int include = values[item] + topToBottomDP(values, weights, item - 1, w - weights[item], lookUp);
+			// exclude the current item
+			int exclude = topToBottomDP(values, weights, item - 1, w, lookUp);
+
+			lookUp.put(key, Integer.max(include, exclude));
+		}
+		return lookUp.get(key);
+	}
+
+	// recursive stuff is exponetial in time complexity.
+	private static int recursiveWayOfDoingThings(int[] values, int[] weights, int item, int w) {
+		System.out.println("item to check " + item + " bag with current weight " + w);
+		// base case
+		if (w < 0) {
+			return Integer.MIN_VALUE;
+		}
+		if (w == 0 || item < 0) {
+			return 0;
+		}
+
+		// include current item and check others
+		System.out.println("adding item " + item + " to bag with w " + w);
+		int include = values[item] + recursiveWayOfDoingThings(values, weights, item - 1, w - weights[item]);
+		// exclude the current item
+		System.out.println("not adding item " + item + " to bag with w " + w);
+		int exclude = recursiveWayOfDoingThings(values, weights, item - 1, w);
+
 		return Integer.max(include, exclude);
 	}
-	
-	//Trying out DP with top->bottom approach with map
-	
+
+	// Trying out DP with top->bottom approach with map
 
 }

@@ -2,6 +2,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - JobSchedule",
+            "request": "launch",
+            "mainClass": "com.ggle.JobSchedule",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRunner",
+            "request": "launch",
+            "mainClass": "com.ggle.TestRunner",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RepeatedSubstringsGgle",
+            "request": "launch",
+            "mainClass": "com.ggle.RepeatedSubstringsGgle",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RobHouse",
+            "request": "launch",
+            "mainClass": "com.dp.RobHouse",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RepeatedSubstrings",
+            "request": "launch",
+            "mainClass": "com.ggle.RepeatedSubstrings",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStream",
+            "request": "launch",
+            "mainClass": "com.random.treestuff.TestStream",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - KanpSackProb",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.KanpSackProb",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxSqureMatrix",
+            "request": "launch",
+            "mainClass": "com.dp.stuff.MaxSqureMatrix",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordSearch",
+            "request": "launch",
+            "mainClass": "com.ggle.wordsearch2.WordSearch",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordSearch",
+            "request": "launch",
+            "mainClass": "com.ggle.WordSearch",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WordLadder",
             "request": "launch",
             "mainClass": "com.ggle.WordLadder",

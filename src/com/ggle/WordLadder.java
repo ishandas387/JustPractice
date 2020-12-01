@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
+
 public class WordLadder {
     
     class Node{
@@ -34,9 +35,27 @@ public class WordLadder {
         int L = startWord.length();
         Map<String, List<String>> dictionary = new HashMap<>();
         //transform and store a word dict
+        /**
+         * Create a transformation map to look it up later.
+         * The map will be having a key of words formed by replacing a single char
+         * Example DOG -> *OG, D*G, DO*
+         * 
+         * The value will be a list of words that can form that key
+         * 
+         * Example D*G -> [DOG, DIG, DAG]
+         */
         createTheTransformationMap(wordList, L, dictionary);
 
         WordLadder wl = new WordLadder();
+        /**
+         * Try to BFS from the startword with level as 1
+         * same theory of using QUEUE and tracking the VISITED
+         * for each of the transformation check the map if key exists
+         * IF exists then get the list and for each of the word in the list
+         * CHECK if end word is found
+         * IF found return level+1 
+         * ELSE add the word to the visited and queue.
+         */
         // bfs
         Queue<Node> queue = new LinkedList<>();
         queue.add(wl.new Node(startWord, 1));

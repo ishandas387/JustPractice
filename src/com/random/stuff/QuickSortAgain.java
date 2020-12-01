@@ -20,10 +20,11 @@ public class QuickSortAgain {
         int index = partition(arr, start, end, pivot);
         quickSort(arr, start, index-1);
         quickSort(arr, index, end);
+       
     }
 
     private static int partition(int[] arr, int left, int right, int pivot) {
-        while(left <= right){
+        while(left < right){
             while(arr[left] < arr[pivot]){
                 left++;
             }

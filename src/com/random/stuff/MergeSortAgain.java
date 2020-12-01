@@ -21,29 +21,27 @@ private static void breakTheArr(int[] arr, int[] results, int start, int end) {
         int mid = (start+end)/2;
         breakTheArr(arr, results, start, mid);
         breakTheArr(arr, results, mid+1, end);
-        sortAndMerge(arr,results, start, end);
+        sortAndMerge(arr, results, start, end);
+
     }
 
     private static void sortAndMerge(int[] arr, int[] results, int start, int end) {
         
         int left = start;
         int leftEnd = (start+end)/2;
-
         int right = leftEnd+1;
         int rightEnd = end;
+        int index = start;
 
-        int index = left;
-        
-        while(left <= leftEnd  && right <= rightEnd){
-
-            if(arr[left] <= arr[right]){
-                results[index++] = arr[left++]; 
+        while(left<= leftEnd && right <= rightEnd){
+            if(arr[left] < arr[right]){
+                results[index++] = arr[left++];
             } else {
                 results[index++] = arr[right++];
             }
         }
 
-        while(left <= leftEnd){
+        while(left<= leftEnd){
             results[index++] = arr[left++];
         }
 
@@ -52,5 +50,6 @@ private static void breakTheArr(int[] arr, int[] results, int start, int end) {
         }
 
         System.arraycopy(results, start, arr, start, end-start+1);
+      
     }
 }

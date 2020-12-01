@@ -42,8 +42,9 @@ public class SubArrySum {
                 int sum = 0;
                 for (int i = start; i < end; i++)
                     sum += nums[i];
-                if (sum == k)
-                count2++;
+                if (sum == k){
+                    count++;
+                }
             }
         }
 
