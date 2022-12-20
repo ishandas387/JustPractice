@@ -2,6 +2,7 @@ package com.random.treestuff;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -252,6 +253,39 @@ public class BinaryTree {
     }
 
     public TreeNode lowestCommonAncestorIteration(TreeNode p, TreeNode q){
+
+        Deque<TreeNode> stack = new LinkedList<>();
+        Map<TreeNode, TreeNode> parentMap = new HashMap<>();
+
+        parentMap.put(root, null);
+        stack.push(root);
+
+        while(!parentMap.containsKey(p) || !parentMap.containsKey(q)) {
+            TreeNode pop = stack.pop();
+            if(pop.left != null){
+                parentMap.put(pop.left, pop);
+                stack.push(pop.left);
+            }
+            if(pop.right != null){
+                parentMap.put(pop.right, pop);
+                stack.push(pop.right);
+            }
+        }
+
+        Set<TreeNode> pParents = new HashSet<>();
+        while(p != null) {
+            
+            pParents.add(p);
+            p = parentMap.get(p);
+        }
+
+        while(!pParents.contains(q)){
+            q = parentMap.get(q);
+        }
+
+        return q;
+
+        /* 
         Stack<TreeNode> stack = new Stack<>();
         Map<TreeNode, TreeNode> parentPointer = new HashMap<>(); 
 
@@ -281,7 +315,7 @@ public class BinaryTree {
         while(!ancestor.contains(q)){
             q = parentPointer.get(q);
         }
-        return q;
+        return q;*/
     }
 
     //given inorder and preorder array construct the tree and 
