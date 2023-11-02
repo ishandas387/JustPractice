@@ -37,7 +37,6 @@ public class RepeatedSubstringsGgle {
         return result;
     }
 
-    @Test
     public void testSubString(){
         
     }

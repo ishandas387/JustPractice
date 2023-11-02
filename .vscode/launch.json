@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinSubArry",
+            "request": "launch",
+            "mainClass": "com.onefifty.slide.MinSubArry",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "NeedleHaystack",
+            "request": "launch",
+            "mainClass": "com.onefifty.NeedleHaystack",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "MaxOccurance",
+            "request": "launch",
+            "mainClass": "com.random.stuff.MaxOccurance",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeSort",
+            "request": "launch",
+            "mainClass": "com.adt.sorting.MergeSort",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - JobSchedule",
             "request": "launch",
             "mainClass": "com.ggle.JobSchedule",
