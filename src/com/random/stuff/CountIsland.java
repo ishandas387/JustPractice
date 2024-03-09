@@ -1,7 +1,11 @@
 package com.random.stuff;
 
 public class CountIsland {
-    private static int[][] grid = { { 1, 0, 1, 1, 0 }, { 1, 0, 0, 0, 0 }, { 1, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0 } };
+    private static int[][] grid = 
+    { { 1, 0, 1, 1, 0 },
+      { 1, 0, 0, 0, 0 },
+      { 1, 1, 0, 0, 0 },
+      { 0, 0, 0, 0, 0 } };
 
     public static void main(String[] args) {
         System.out.println("island count " + getIslandCount());
