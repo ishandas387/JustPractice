@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TreeUse",
+            "request": "launch",
+            "mainClass": "com.random.treestuff.TreeUse",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "MinSubArry",
             "request": "launch",
             "mainClass": "com.onefifty.slide.MinSubArry",

@@ -1,4 +1,4 @@
-package com.random.stuff;
+package com.random.stuff.graphadt;
 
 import java.util.ArrayList;
 import java.util.Stack;

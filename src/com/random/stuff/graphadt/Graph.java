@@ -1,4 +1,4 @@
-package com.random.stuff;
+package com.random.stuff.graphadt;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Graph {
@@ -33,7 +34,13 @@ public class Graph {
     public void removeVertex(String node){
         Vertex v = new Vertex(node);
         //delete all the edges where ever it is in the graph
-        adjListMap.values().stream().map(l -> l.remove(v)).collect(Collectors.toList());
+        adjListMap.forEach((k, listOfVertex) -> {
+                if(listOfVertex.contains(node)) {
+                    adjListMap.put(k, listOfVertex.stream()
+                                                    .filter(val -> !val.equals(node))
+                                                    .collect(Collectors.toList()));
+                }
+        });
         //remove the node.
         adjListMap.remove(v);
 
@@ -54,6 +61,7 @@ public class Graph {
     }
 
     //DFS given a start node
+    
     public void DepthFirst(Graph graph, String startNode){
         //dfs uses a stack 
         Stack<String> stack = new Stack();
@@ -63,6 +71,7 @@ public class Graph {
         while(!stack.isEmpty()){
             String vertex = stack.pop();
             if(!visited.contains(vertex)){
+                visited.add(vertex);
                 List<Vertex> listOfVertex = this.getAdjListMap().get(new Vertex(vertex));
                 for(Vertex v : listOfVertex){
                     stack.push(v.getNode());

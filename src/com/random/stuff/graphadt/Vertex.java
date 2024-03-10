@@ -1,4 +1,4 @@
-package com.random.stuff;
+package com.random.stuff.graphadt;
 
 public class Vertex {
     
