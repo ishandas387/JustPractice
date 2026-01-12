@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IsPallindromeValid",
+            "request": "launch",
+            "mainClass": "com.rvs2026.twopointers.IsPallindromeValid",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "TripletSumToTarget",
+            "request": "launch",
+            "mainClass": "com.rvs2026.twopointers.TripletSumToTarget",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
+            "name": "PairBySum",
+            "request": "launch",
+            "mainClass": "com.rvs2026.twopointers.PairBySum",
+            "projectName": "GkForGks"
+        },
+        {
+            "type": "java",
             "name": "TreeUse",
             "request": "launch",
             "mainClass": "com.random.treestuff.TreeUse",
