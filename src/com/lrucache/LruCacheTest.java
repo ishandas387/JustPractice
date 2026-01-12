@@ -101,6 +101,7 @@ public class LruCacheTest {
 		System.out.println(lrucache.get(1));
 		System.out.println(lrucache.get(10));
 		System.out.println(lrucache.get(15));
+        System.out.println(lrucache.toString());
 
 	}
 }

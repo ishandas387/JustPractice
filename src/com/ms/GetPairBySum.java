@@ -26,22 +26,22 @@ public class GetPairBySum {
 	}
 
 	// O(nlogn)
-	public static List<List<Integer>> getPairBySumWithSort(int[] arr, int sum) {
+	public static List<List<Integer>> getPairBySumWithSort(int[] arr, int expectedSum) {
 		List<List<Integer>> listOfPairs = new ArrayList<>();
 		Arrays.sort(arr);
 		int start = 0;
 		int end = arr.length - 1;
 
 		while (start < end) {
-			int s = arr[start] + arr[end];
-			if (s == sum) {
+			int currentSum = arr[start] + arr[end];
+			if (currentSum == expectedSum) {
 				List<Integer> list = new ArrayList<>();
 				list.add(arr[start]);
 				list.add(arr[end]);
 				listOfPairs.add(list);
 			}
 
-			if (s < sum) {
+			if (currentSum < expectedSum) {
 				start++;
 			} else {
 				end--;
