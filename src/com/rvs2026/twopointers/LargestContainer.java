@@ -7,6 +7,20 @@ import java.util.List;
  *  You are given an array of numbers, each representing the height of a vertical line on a graph,
     A container can be ~rmed with any pair of these lines, along with the x-axis o'f the graph,
     Return the amount of water which the largest container can hold.
+                “Opposite Direction Two Pointer”
+
+            Used when:
+
+            array boundaries matter
+            width shrinks gradually
+            need optimal pair
+
+            Very common in:
+
+            trapping rain water
+            pair sum sorted
+            palindrome problems
+            max/min pair optimization
  */
 public class LargestContainer {
 
